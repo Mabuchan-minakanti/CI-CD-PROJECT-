@@ -21,3 +21,7 @@ header, footer {
     background-color: rgb(86, 142, 188);
     border-radius:25px;
 }
+
+html{
+  scroll-behaviour: smooth;
+}
