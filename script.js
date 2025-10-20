@@ -2,7 +2,7 @@ console.log("Portfolio site is live 🚀");
 const backToTop = document.getElementById('backToTop');
 
 window.addEventListener('scroll', () => {
-  if (window.scrollY > 300) {
+  if (window.scrollY > 800) {
     backToTop.style.display = 'block';
   } else {
     backToTop.style.display = 'none';
