@@ -33,7 +33,7 @@ nav {
 }
 
 html{
-  scroll-behaviour: smooth;
+  scroll-behavior: smooth;
 }
 
 section {
@@ -75,4 +75,41 @@ a:hover {
 }
 h1, h2 {
     font-weight: bold;
+}
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column;   /* Stack buttons vertically */
+    align-items: center;
+  }
+
+  .nav-btn {
+    margin: 5px 0;
+    width: 80%;              /* Buttons become wider */
+    text-align: center;
+  }
+
+  section {
+    padding: 20px 10px;       /* Reduce padding on small screens */
+  }
+
+  h1 {
+    font-size: 1.5rem;       /* Smaller headline on mobile */
+  }
+}
+#backToTop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px 15px;
+  background-color: purple;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 18px;
+  display: none;   /* Hidden by default */
+}
+
+#backToTop:hover {
+  background-color: rgb(100, 0, 100);
 }
